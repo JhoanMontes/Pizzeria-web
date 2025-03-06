@@ -1,0 +1,72 @@
+.navbar-brand img{
+    width: 45px;
+    height: auto;
+}
+
+*{
+    font-family: "SoDoSans-Regular";
+}
+
+@font-face {
+    font-family: "SoDoSans-Light";
+    src: url(./assets/fonts/SoDoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "SoDoSans-Regular";
+    src: url(./assets/fonts/SoDoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "SoDoSans-SemiBold";
+    src: url(./assets/fonts/SoDoSans-SemiBold.ttf);
+}
+
+.navbar{
+    box-shadow: 
+        0 1px 3px rgb(0,0,0,.1),
+        0 2px 2px rgb(0,0,0,.06),
+        0 0px 2px rgb(0,0,0,.07);
+}
+
+.ff-SoDoSans-SemiBold{
+    font-family: "SoDoSans-SemiBold" !important;
+}
+
+.fs-96{
+    font-size: .96rem !important;
+}
+
+.nav-link-sb{
+    text-decoration: none !important;
+}
+
+.nav-link-sb ion-icon {
+    font-size: 1.4rem;
+    color: #1f2021;
+    margin-right: 5px;
+}
+
+.nav-link-sb span{
+    color: #1f2021;
+}
+
+.nav-link-sb:hover span{
+    color: #00574a !important;
+}
+
+.nav-link-sb:hover ion-icon{
+    color: #00574a !important;
+}
+
+.btn-white{
+    border: 1px solid #000;
+    border-radius: 2rem;
+    padding: 3px 18px;
+    font-size: .9rem;
+    background-color: white;
+}
+
+.btn-white:hover{
+    background-color: #f1f1f1;
+}
