@@ -1,11 +1,13 @@
-.navbar-brand img{
-    width: 45px;
-    height: auto;
+:root {
+    --primary-green: #429345;
+    --primary-red: #E53935;
+    --neutral-white: #F9F9F9;
+    --warm-brown: #8D6E63;
+    --accent-yellow: #FFEB3B;
+
 }
 
-*{
-    font-family: "SoDoSans-Regular";
-}
+
 
 @font-face {
     font-family: "SoDoSans-Light";
@@ -22,22 +24,45 @@
     src: url(./assets/fonts/SoDoSans-SemiBold.ttf);
 }
 
-.navbar{
-    box-shadow: 
-        0 1px 3px rgb(0,0,0,.1),
-        0 2px 2px rgb(0,0,0,.06),
-        0 0px 2px rgb(0,0,0,.07);
+@font-face {
+    font-family: "shadeBlue";
+    src: url(./assets/fonts/ShadeBlue.ttf);
 }
 
-.ff-SoDoSans-SemiBold{
-    font-family: "SoDoSans-SemiBold" !important;
+* {
+    font-family: "SoDoSans-Regular";
 }
 
-.fs-96{
-    font-size: .96rem !important;
+.navbar {
+
+    box-shadow:
+        0 1px 3px rgb(0, 0, 0, .1),
+        0 2px 2px rgb(0, 0, 0, .06),
+        0 0px 2px rgb(0, 0, 0, .07);
 }
 
-.nav-link-sb{
+.navbar-brand:focus {
+    outline: none !important;
+}
+
+.navbar-brand img {
+    width: 80px;
+    height: auto;
+}
+
+.navbar-brand span {
+    color: var(--primary-green) !important;
+    font-size: 1.8rem !important;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.font-family-logo {
+    font-family: "shadeBlue", sans-serif;
+    font-size: 2rem !important;
+}
+
+.nav-link-sb {
     text-decoration: none !important;
 }
 
@@ -47,26 +72,149 @@
     margin-right: 5px;
 }
 
-.nav-link-sb span{
+.nav-link-sb span {
+
     color: #1f2021;
+
 }
 
-.nav-link-sb:hover span{
-    color: #00574a !important;
-}
 
-.nav-link-sb:hover ion-icon{
-    color: #00574a !important;
-}
+.btn-white {
 
-.btn-white{
     border: 1px solid #000;
     border-radius: 2rem;
     padding: 3px 18px;
     font-size: .9rem;
     background-color: white;
+    transition: background, .3s ease;
+
 }
 
-.btn-white:hover{
-    background-color: #f1f1f1;
+.btn-white:hover {
+    background-color: hwb(0 95% 5%);
+}
+
+.img-producto {
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 288px;
+    height: 288px;
+    transition: padding .3s ease;
+    position: relative;
+    overflow: hidden;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+
+    animation-timeline: --image;
+    animation-name: AnimationImages;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+
+
+}
+
+.img-producto:hover {
+
+    padding: 14px;
+
+}
+
+.content-pizza .img-producto {
+    background: #f9f4ed;
+
+}
+
+.content-refresco .img-producto {
+    background: #eaf2f8;
+
+}
+
+
+.content-postre .img-producto {
+    background: #fff8fa;
+    max-width: 288px;
+}
+
+.precio {
+  position: absolute;
+    left: 8%; 
+    top: 64%; 
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateX(-10px);
+    pointer-events: none; 
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+footer {
+    margin-top: 200px !important;
+    background: #469248;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.social-icons a {
+    font-size: 1.25rem;
+}
+
+.list-unstyled a,
+p {
+    color: #ffffff !important;
+    font-weight: 200;
+}
+
+.text-muted:hover {
+
+    color: var(--primary-green) !important;
+
+}
+
+.social-icons {
+    padding: 5px !important;
+    margin: 0 !important;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.list-inline-item a {
+    width: 24px;
+    display: inline-block !important;
+    transition: transform 0.3s ease !important;
+}
+
+.list-inline-item:hover a {
+    color: #e4e4e4 !important;
+
+}
+
+@keyframes AnimationImages {
+
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+
+        opacity: 1;
+        scale: 100%;
+    }
 }

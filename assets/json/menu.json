@@ -1,0 +1,92 @@
+{
+    "pizzas": [
+        {
+            "nombre": "Margarita",
+            "descripcion": "Clásica pizza con salsa de tomate, mozzarella y albahaca fresca.",
+            "precio": 8.99,
+            "imagen": "./assets/media/menu/pizzas/Pizza-Margarita.png"
+        },
+        {
+            "nombre": "Pepperoni",
+            "descripcion": "Deliciosa pizza con pepperoni crujiente y extra queso mozzarella.",
+            "precio": 10.99,
+            "imagen": "./assets/media/menu/pizzas/Pizza-Pepperoni.png"
+        },
+        {
+            "nombre": "Cuatro Quesos",
+            "descripcion": "Mezcla irresistible de mozzarella, gorgonzola, parmesano y cheddar.",
+            "precio": 11.99,
+            "imagen": "./assets/media/menu/pizzas/Pizza-Cuatro-Quesos.png"
+        },
+        {
+            "nombre": "Hawaiana",
+            "descripcion": "Salsa de tomate, queso mozzarella, jamón y piña fresca.",
+            "precio": 9.99,
+            "imagen": "./assets/media/menu/pizzas/Pizza-Hawaiana.png"
+        },
+        {
+            "nombre": "Pizza Marinara",
+            "descripcion": "Pizza simple con salsa de tomate, ajo, orégano y aceite de oliva.",
+            "precio": 8.00,
+            "imagen": "./assets/media/menu/pizzas/Pizza-Marinara.png"
+        }
+    ],
+    "refrescos": [
+        {
+            "nombre": "Coca-Cola",
+            "descripcion": "Refresco clásico de cola.",
+            "precio": 2.50,
+            "imagen": "./assets/media/menu/refrescos/Coca-Cola.png"
+        },
+        {
+            "nombre": "Sprite",
+            "descripcion": "Refresco de limón-lima sin cafeína.",
+            "precio": 2.50,
+            "imagen": "./assets/media/menu/refrescos/Sprite.png"
+        },
+        {
+            "nombre": "Fanta Naranja",
+            "descripcion": "Refresco con sabor a naranja, dulce y burbujeante.",
+            "precio": 2.50,
+            "imagen": "./assets/media/menu/refrescos/Fanta-Naranja.png"
+        },
+        {
+            "nombre": "Agua Mineral",
+            "descripcion": "Agua con gas refrescante y ligera.",
+            "precio": 1.99,
+            "imagen": "./assets/media/menu/refrescos/Agua-Mineral.png"
+        }
+    ],
+    "postres": [
+        {
+            "nombre": "Tiramisú",
+            "descripcion": "Postre italiano con capas de café, mascarpone y cacao.",
+            "precio": 4.99,
+            "imagen": "./assets/media/menu/postres/Tiramisu.png"
+        },
+        {
+            "nombre": "Cheesecake",
+            "descripcion": "Tarta de queso cremosa con base de galleta.",
+            "precio": 5.99,
+            "imagen": "./assets/media/menu/postres/Cheesecake.png"
+        },
+        {
+            "nombre": "Brownie con Helado",
+            "descripcion": "Brownie de chocolate caliente con bola de helado de vainilla.",
+            "precio": 6.50,
+            "imagen": "./assets/media/menu/postres/Brownie-Helado.png"
+        },
+        {
+            "nombre": "Panna Cotta Tradicional",
+            "descripcion": "Postre italiano de crema suave y sedosa, acompañado de una salsa de frutos del bosque.",
+            "precio": 5.50,
+            "imagen": "./assets/media/menu/postres/Panna-Cotta.png"
+        },
+        {
+            "nombre": "Panettone",
+            "descripcion": "Pan dulce italiano tradicional, relleno de pasas y frutas confitadas, ideal para compartir.",
+            "precio": 8.00,
+            "imagen": "./assets/media/menu/postres/Panettone.png"
+        }
+    ]
+}
