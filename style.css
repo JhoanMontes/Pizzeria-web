@@ -143,9 +143,9 @@
 }
 
 .precio {
-  position: absolute;
-    left: 8%; 
-    top: 64%; 
+    position: absolute;
+    left: 8%;
+    top: 64%;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 8px 12px;
@@ -154,7 +154,7 @@
     opacity: 0;
     transition: opacity 0.4s ease, transform 0.4s ease;
     transform: translateX(-10px);
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 .visible {
@@ -162,6 +162,85 @@
     transform: translateX(0);
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background: white;
+    border-left: 1px solid #e5e7eb;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.list-group {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.total-pedido {
+    position: absolute;
+   bottom: 0;
+    left: 0;
+    right: 0;
+   height: 100px;
+   
+
+}
+
+
+
+.btn-close:focus {
+    box-shadow: none !important;
+}
+
+.icon-add {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 3px;
+
+}
+
+.btn-add:focus {
+    box-shadow: none !important;
+    background: #4fa952 !important;
+}
+
+.btn-add {
+
+
+    background: var(--primary-green);
+    border: none !important;
+
+    border-radius: 16px 0 0 16px;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: right;
+    transform: scale(1) scaleX(0); 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+
+
+}
+
+.btn-add.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1); 
+}
+
+.btn-add:hover {
+
+    background: #337235;
+
+}
 
 footer {
     margin-top: 200px !important;
